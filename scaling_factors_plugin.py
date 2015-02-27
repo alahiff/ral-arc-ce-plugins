@@ -45,7 +45,7 @@ def GetScalingFactor(control_dir, jobid):
 
     scaling = -1
 
-    m = re.search('MATCH_EXP_MachineRalScaling = \"([\dE\+\-\.]+)\"',
+    m = re.search('MATCH_EXP_MachineRalScaling = \"([\dE\+\-\.]+)\"', errors)
     if m:
        scaling = float(m.group(1))
 
