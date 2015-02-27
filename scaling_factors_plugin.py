@@ -79,9 +79,9 @@ def SetScaledTimes(control_dir, jobid):
 
        newlines.append(line)
 
-       fw = open(diag_file, "w")
-       fw.writelines(newlines)
-       fw.close()
+    fw = open(diag_file, "w")
+    fw.writelines(newlines)
+    fw.close()
 
     return 0
 
